@@ -28,3 +28,23 @@
 
     </Grid>
 </Page>
+        private void Txt1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+
+            string phoneno = Txt1.Text;
+            if (Txt1.Text.Length == 10)
+            {
+                Regex regex = new Regex("^[0-9]{10}$");
+
+                bool valid = regex.IsMatch(phoneno);
+                if (!valid)
+                {
+                    Txt1.Text =phoneno;
+                }
+                else 
+                {
+                    txtPhone.Text = "enter valid one";
+                }
+            }
+        }
