@@ -25,6 +25,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="txtPhone" Text="Mobile"  HorizontalAlignment="Right" Grid.Column="0" Grid.Row="2" />
         <TextBox  x:Name="Txt1"     Text=" " VerticalAlignment="Top"   Grid.Row="2" TextChanged="Txt1_TextChanged" Grid.Column="1"/>
+        <TextBox  x:Name="Txt1"     Text=" " VerticalAlignment="Top"   Grid.Row="3" TextChanged="Txt1_TextChanged" Grid.Column="1"/>
 
     </Grid>
 </Page>
